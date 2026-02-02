@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fundamental Counting Principle | DCT Education</title>
+
+  <style>
+    :root{
+      --text:#0f172a;
+      --muted:#475569;
+      --bg:#ffffff;
+      --card:#ffffff;
+      --border:#e2e8f0;
+      --soft:#f8fafc;
+      --accent:#2563eb;
+      --goodbg:#ecfdf3;
+      --goodbd:#b7f0cd;
+      --badbg:#fff1f2;
+      --badbd:#fecdd3;
+    }
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    header{
+      background:var(--soft);
+      border-bottom:1px solid var(--border);
+      padding:1.5rem;
+      text-align:center;
+    }
+
+    header h1{
+      margin:0;
+      font-size:2rem;
+    }
+
+    header p{
+      margin-top:0.5rem;
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+
+    main{
+      max-width:900px;
+      margin:0 auto;
+      padding:2rem 1.25rem;
+    }
+
+    section{
+      margin-bottom:2.5rem;
+    }
+
+    h2{
+      font-size:1.6rem;
+      margin-bottom:0.75rem;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:1.25rem 1.5rem;
+    }
+
+    .example{
+      background:var(--goodbg);
+      border:1px solid var(--goodbd);
+      border-radius:10px;
+      padding:1rem 1.25rem;
+      margin-top:1rem;
+    }
+
+    .practice{
+      background:var(--badbg);
+      border:1px solid var(--badbd);
+      border-radius:10px;
+      padding:1rem 1.25rem;
+      margin-top:1rem;
+    }
+
+    ul{
+      padding-left:1.2rem;
+    }
+
+    li{
+      margin:0.4rem 0;
+    }
+
+    .formula{
+      font-size:1.25rem;
+      font-weight:600;
+      margin-top:0.75rem;
+    }
+
+    footer{
+      text-align:center;
+      padding:1.5rem;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Fundamental Counting Principle</h1>
+  <p>How to count outcomes when choices happen in steps</p>
+</header>
+
+<main>
+
+  <!-- WHAT IT IS -->
+  <section>
+    <h2>What Is the Fundamental Counting Principle?</h2>
+    <div class="card">
+      <p>
+        The <strong>Fundamental Counting Principle</strong> is used to count how many total outcomes are possible
+        when an event happens in <strong>multiple steps</strong>.
+      </p>
+
+      <p>
+        If one step can happen in <strong>a</strong> ways, and the next step can happen in <strong>b</strong> ways,
+        then the total number of outcomes is:
+      </p>
+
+      <p class="formula">
+        a · b
+      </p>
+
+      <p>
+        Every time you move from one choice to another choice, you <strong>multiply</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- SIMPLE EXAMPLE -->
+  <section>
+    <h2>Simple Example</h2>
+    <div class="example">
+      <p>
+        You are choosing:
+      </p>
+      <ul>
+        <li>3 different shirts</li>
+        <li>2 different pairs of pants</li>
+      </ul>
+
+      <p>
+        For every shirt, you can wear <strong>any</strong> pair of pants.
+      </p>
+
+      <p class="formula">
+        3 · 2 = 6 outfits
+      </p>
+    </div>
+  </section>
+
+  <!-- TEST-STYLE EXAMPLE -->
+  <section>
+    <h2>Test-Style Example</h2>
+    <div class="example">
+      <p>
+        A student must create a password using:
+      </p>
+
+      <ul>
+        <li>1 letter (A, B, C)</li>
+        <li>1 digit (1, 2, 3, 4)</li>
+      </ul>
+
+      <p>
+        Each letter can be paired with any digit.
+      </p>
+
+      <p class="formula">
+        3 · 4 = 12 possible passwords
+      </p>
+    </div>
+  </section>
+
+  <!-- IMPORTANT NOTE -->
+  <section>
+    <h2>Important Note</h2>
+    <div class="card">
+      <p>
+        The Fundamental Counting Principle does <strong>not</strong> care about order yet.
+      </p>
+
+      <p>
+        It only answers one question:
+      </p>
+
+      <p class="formula">
+        “How many total outcomes are possible?”
+      </p>
+
+      <p>
+        This idea is the foundation for <strong>permutations</strong> and <strong>combinations</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRACTICE -->
+  <section>
+    <h2>Practice Questions</h2>
+    <div class="practice">
+      <ol>
+        <li>
+          A menu has 4 appetizers and 5 main dishes.  
+          How many different meals can be made?
+        </li>
+        <li>
+          A lock uses:
+          <ul>
+            <li>2 letters (A–D)</li>
+            <li>1 number (1–5)</li>
+          </ul>
+          How many codes are possible?
+        </li>
+        <li>
+          A student chooses:
+          <ul>
+            <li>1 hoodie from 6 options</li>
+            <li>1 pair of shoes from 3 options</li>
+            <li>1 hat from 4 options</li>
+          </ul>
+          How many outfits are possible?
+        </li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © DCT Education
+</footer>
+
+</body>
+</html>
